@@ -5,4 +5,4 @@ Developed by Amirreza Karimi
 
 Technologies Used, Html and Css and JS
 
-Demo - http://amirezakarimi.github.io.to.do.list/
+Demo - https://amirezakarimi.github.io/to-do-list/

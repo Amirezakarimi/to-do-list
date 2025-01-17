@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="icon" href="assests/img/to-do-list.png">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="assests/Style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+</head>
+
+<body>
+    <div class="theme-switch">
+        <button onclick="toggleTheme()" id="themeToggle">
+            <span class="light-icon">🌞</span>
+            <span class="dark-icon">🌙</span>
+        </button>
+    </div>
+    <div class="container">
+        <h1>لیست کارهای من</h1>
+
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="کار جدید را وارد کنید...">
+            <input type="date" id="dueDateInput">
+            <button onclick="addTask()">افزودن</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')" class="active">همه</button>
+            <button onclick="filterTasks('active')">فعال</button>
+            <button onclick="filterTasks('completed')">تکمیل شده</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="todo-footer">
+            <span id="taskCount">0 مورد باقی مانده</span>
+            <button onclick="clearCompleted()">حذف تکمیل شده‌ها</button>
+        </div>
+    </div>
+    <script src="assests/Script/script.js"></script>
+</body>
+
+</html>
